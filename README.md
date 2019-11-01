@@ -1,17 +1,17 @@
 
 # Being expressive with functions
 
-### Learning objectives
+## Learning objectives
 
 * Understand what it means to say that a function is dependent on a variable
 * Understand how to express a multivariable function 
 * Understand how to express a function that is composed of another function, and why we express functions that way  
 
-### Introduction
+## Introduction
 
 Concepts in mathematics and in code tend to align.  Both are mechanisms to express an idea and model the world around it.  It's time we go off on a little bit of a tangent to explore how denoting functions in math aligns with denoting functions in code.  Some of these concepts may feel like review, but solidifying this foundation will provide clarity when we move on to explore other mathematical topics.
 
-### Expressing functions
+## Expressing functions
 
 Let's find a way to talk about functions in general.  We describe a function as $f(x)$.  $f(x)$ is our generic way to express a function.  We are not saying the output equals $y$ or anything else, we are just saying that the function returns an output.  For example, we can say the following:
 
@@ -39,7 +39,7 @@ f(3)
 
 
 
-### Evaluating functions at specific values
+## Evaluating functions at specific values
 
 Let's evaluate the function $f(x)$ at specific values of $x$.  So when $x = 3$, $f(x) = 3x = 3*3 = 9$.  And when $x = 4$,  $f(x) = 4*3 = 12$.  Another way of saying "when $x = 3$ is simply to say $f(3)$.  So:
 $$f(3) = 9$$
@@ -74,7 +74,7 @@ f(4)
 
 So far it feels like a small leap to go from expressing a function in math to expressing a function in code.
 
-### Unpacking  the $x$ in  $f(x)$
+## Unpacking  the $x$ in  $f(x)$
 
 So the $x$ part of $f(x)$ indicates that the function produces different outputs with different values of $x$.  As our values of $x$ change, the output of the function also changes.  By describing our function as $f(x)$, or as "a function of $x$", we also indicate that the same $x$ input always returns the same output from the function.  
 
@@ -130,7 +130,7 @@ def f(x):
     return 3*x + 4
 ```
 
-### Unpacking  the $f$ in  $f(x)$
+## Unpacking  the $f$ in  $f(x)$
 
 Now that we understand the significance of $x$ in $f(x)$ what does the $f$ mean?  Well not too much.  It just a label for a specific function.  We could easily written our previous function as:
 
@@ -144,7 +144,7 @@ $$ g(x) = x + 100 $$
 
 Later on, we can reference the second function, $g(x)$, and know which function we're referring to.
 
-### Functions depending on other functions
+## Functions depending on other functions
 
 Now that we know how to label different functions, we can also take a look at what it means for functions to depend on other functions.  In code, we see this all of the time.  For example, here is a function that we have solved before.
 
@@ -203,6 +203,6 @@ $$f(x) = 3 + 4x $$
 
 $$ g(f(x)) = f(x)^2 $$
 
-### Summary
+## Summary
 
 In this section, we learned about expressing functions mathematically.  We saw that when what we call a function, the letter we use, whether $f$ or $g$ or $z$, doesn't matter.  We only are giving our function a name that we easily can refer to later on.  In the parentheses, we indicate what the output of the function is dependent on.  Sometimes the output of the function depends on one variable, and sometimes our function depends on multiple variables.  Sometimes our function depends on another *function*, whose output depends on other variables.  
